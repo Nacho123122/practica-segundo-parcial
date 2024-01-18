@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Nota from './Nota';
-import '../style/ListaNotas.css';
+import '../style/ListaItems.css';
 
-function ListaNotas() {
+function ListaItems() {
     const [notas, setNotas] = useState([]);
     const [nuevaNota, setNuevaNota] = useState('');
 
@@ -20,13 +20,15 @@ function ListaNotas() {
 
     return (
         <div className="contenedor-principal">
+            <div>
             <input
                 className="input"
                 type="text"
                 value={nuevaNota}
                 onChange={(e) => setNuevaNota(e.target.value)}
             />
-            <button className='boton' onClick={agregarNota}>Agregar Nota</button>
+            <button className='boton' onClick={agregarNota}>Add</button>
+            </div>
             {notas.map((nota) => (
                 <Nota
                     key={nota.id}
@@ -39,4 +41,4 @@ function ListaNotas() {
     );
 }
 
-export default ListaNotas;
+export default ListaItems;

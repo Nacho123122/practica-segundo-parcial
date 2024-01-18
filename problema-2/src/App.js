@@ -1,9 +1,9 @@
 import './App.css';
-import ListaNotas from './components/ListaNotas';
+import ListaItems from './components/ListaItems';
 function App() {
   return (
     <div className="App">
-      <ListaNotas />
+      <ListaItems />
     </div>
   );
 }

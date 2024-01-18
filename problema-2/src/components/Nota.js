@@ -1,18 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../style/Nota.css';
 function Nota({ nota, onDelete}) {
     
-    const [nuevoTexto, setNuevoTexto] = useState(nota.texto);
-
-
-
     return (
-        <div>
+        <div >
             
                 <div className='contenedor-nota'>
-                    <p className='nota'>{nota.texto}</p>
-                    <button className='boton' onClick={() => onDelete(nota.id)}>Eliminar</button>
-                    
+                    <ul>
+                        <li className='nota'>{nota.texto}
+                        <button className='boton' onClick={() => onDelete(nota.id)}>X</button></li>
+                    </ul>
                 </div>
             
         </div>
