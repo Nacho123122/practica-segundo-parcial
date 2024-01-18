@@ -1,8 +1,6 @@
 import React from 'react';
 import '../style/Nota.css';
 function Nota({ nota }) {
-    
-   
 
     return (
         <div>

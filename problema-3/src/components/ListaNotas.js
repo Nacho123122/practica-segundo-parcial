@@ -26,27 +26,31 @@ function ListaNotas() {
     
     return (
         <div className='contenedor-principal'>
+            <h1>User Name:</h1>
             <input
                 className="input"
                 type="text"
                 value={nuevaNota}
                 onChange={(e) => setNuevaNota(e.target.value)}
             />
+            <h1>Full Name:</h1>
             <input
                 className="input"
                 type="text"
                 value={nuevaNota1}
                 onChange={(e) => setNuevaNota1(e.target.value)}
             />
+            <h1>Age:</h1>
             <input
                 className="input"
                 type="text"
                 value={nuevaNota2}
                 onChange={(e) => setNuevaNota2(e.target.value)}
             />
-            <button className='boton' onClick={agregarNota}>Agregar Nota</button>
+            <button className='boton' onClick={agregarNota}>Submit</button>
             
             {notas.map((nota) => (
+                
                 
                 <Nota
                     key={nota}
