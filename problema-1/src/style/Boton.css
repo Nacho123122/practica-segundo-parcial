@@ -1,5 +1,7 @@
-.button{
-    width: 300px;
-    height: 100px;
-    background-color: blueviolet;
+button{
+    width: 150px;
+    height: 60px;
+    background-color: rebeccapurple;
+    border-radius: 5px;
 }
+
