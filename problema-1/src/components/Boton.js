@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React from 'react';
 import '../style/Boton.css';
 
-function Boton({funcion}){
-    return(
-        <div className="main">
-            <button className="boton" onClick={funcion}>
-                Show\Hide
-            </button>
-            
-        </div>
+function Boton({ texto, esBotonClick, funcionClick }) {
+
+    return (
+        <button className={esBotonClick ? "boton-click" : "boton-reinciar"}
+            onClick={funcionClick}>
+            {texto}
+        </button>
     )
 }
 export default Boton;

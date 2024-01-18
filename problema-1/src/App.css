@@ -2,8 +2,10 @@
   text-align: center;
   background-color: white;
   display: flex;
-  
   justify-content: center;
 }
-
+.contenedor-principal{
+  display: flex;
+  flex-direction: row;
+}
 
